@@ -1,0 +1,9 @@
+class  Bottle
+{
+	String Brand;
+	String Colour;
+	String shape;
+	String type;
+	double Capacity;
+	double price;
+}

@@ -1,0 +1,18 @@
+class  StrontioNumber
+{
+	public static void main(String[] args) 
+	{
+		int num=1224;
+		int temp=num;
+			num=(num*2%1000)/10;	
+		
+		if (num%10==num/10)
+			{
+				System.out.println("Its is a Strontio Number");
+			}
+			else
+			{
+				System.out.println("It is not a Strontio Number");
+			}
+	}
+}

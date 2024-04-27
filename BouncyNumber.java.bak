@@ -1,0 +1,39 @@
+class BouncyNumber 
+{
+	public static void main(String[] args) 
+	{
+		int num=12332;
+		boolean inc=false;
+		boolean dec=false;
+		int last=num%10;
+		while (num>9)
+		{
+			num/=10;
+			int secLast=num%10;
+			if (last>secLast)
+			{
+				dec=true;
+			}
+			else if (last<secLast)
+			{
+				inc=true;
+			}
+			if (inc&&dec)
+			{
+				break;
+			}
+			else
+			{
+				last=secLast;
+			}
+		}
+		if (inc && dec)
+		{
+			System.out.println("It is a bouncy number");
+		}
+		else
+		{
+			System.out.println("It is not a bouncy number");
+		}
+	}
+}

@@ -1,0 +1,27 @@
+class  ByteConversion
+{
+	public static void main(String[] args) 
+	{
+		byte b=97;
+
+		short s=b;
+		System.out.println(s);
+
+		int i=b;
+		System.out.println(i);
+
+		long l=b;
+		System.out.println(l);
+
+		float f=b;
+		System.out.println(f);
+
+		double d=b;
+		System.out.println(d);
+
+		//char ch=b;
+		//System.out.println(ch);
+
+
+	}
+}

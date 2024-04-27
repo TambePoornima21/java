@@ -1,0 +1,41 @@
+class SumOfPrimeDigit 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println(isPrime(13));
+	}
+
+	public static boolean isPrime(int digit)
+	{
+		int i=2;
+		for (i=2;i<=digit ;i++ )
+		{
+			if (digit%i==0)
+			{
+				break;
+			}
+		}
+		if (digit==i)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	public static int sum(int num, int digit)
+	{
+		int sum=0;
+		while(num!=0)
+		{
+			if (isPrime(digit))
+			{
+				sum+=digit;
+			}
+			num/=10;
+		}
+		return sum;
+	}
+}

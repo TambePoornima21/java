@@ -1,0 +1,56 @@
+class Account 
+{
+	static double balance;
+	static long accno=9876543210l;
+	static int pin=1234;
+	public static void main(String[] args) 
+	{
+		System.out.println(balance);
+		withdraw(9876543210l,1234,10000.00);
+		deposit(9876543210l,1234,10000.00);
+
+
+	}
+
+	public static void withdraw(long accno, int pin, double amt)
+	{
+		if (Account.accno==accno && Account.pin==pin &&amt>0)
+		{
+			System.out.println("Logged in !");
+
+			if (balance-amt>=0)
+			{
+				balance=balance-amt;
+				System.out.println("Balance Deducted !!");
+				System.out.println("Your available balance : "+balance);
+
+			}
+			else
+			{
+				System.out.println("Insufficient Balance !!");
+				System.out.println("Your balance : "+balance);
+			}
+		}
+			else
+			{
+				System.out.println("Incorrect Username or Password !");
+			}
+
+	}
+
+	public static void deposit(long accno, int pin, double amt)
+	{
+		if (Account.accno==accno && Account.pin==pin &&amt>0)
+		{
+			System.out.println("Logged in !");
+			balance=balance+amt;
+
+			System.out.println("Amount Credited !!");
+			System.out.println("Your available balance :"+balance);
+		}
+		else
+		{
+			System.out.println("Incorrect Username or Password !");
+		}
+	}
+}

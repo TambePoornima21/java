@@ -1,0 +1,11 @@
+class LargestOFThree 
+{
+	public static void main(String[] args) 
+	{
+		int n1 = 50;
+		int n2 = 26;
+		int n3 = 61;
+		int ans = n1>(ans = n2>n3 ? n2 : n3 ) ? n1 : ans ;
+		System.out.println("The Largest of "+n1+" , " +n2+ " and "+n3+ " is : " + ans);
+	}
+}

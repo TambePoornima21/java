@@ -1,0 +1,42 @@
+import java.util.Scanner;
+class  SumOfPrime
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter First number : ");
+		int n1=sc.nextInt();
+		System.out.println("Enter Second number : ");
+		int n2=sc.nextInt();
+
+		int den=2;
+
+
+		int sum=n1+n2;
+		
+		while (den<sum)
+		{
+			if (n1%den==0)
+				
+			{
+				break;
+
+			}
+			den++;
+		}
+			if (den==sum)
+			{
+				System.out.println("The sum of digits is a Prime number");
+			}
+			else
+			{
+				System.out.println("The sum of digits is not a Prime number");
+			}
+		}
+
+
+
+	}
+
+		
+

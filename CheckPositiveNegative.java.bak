@@ -1,0 +1,10 @@
+class CheckPositiveNegative 
+{
+	public static void main(String[] args) 
+	{
+		int n1 = -4565;
+
+		String ans = n1>(0>n1?"The given number is Positive Number" : "The given number is Negative Number")? n1 : "The given number is Positive Number";
+		System.out.println(ans);
+	}
+}

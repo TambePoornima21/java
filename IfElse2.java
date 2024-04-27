@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class  IfElse2
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Your Pin : ");
+		int pin = sc.nextInt();
+
+		if(pin==1234){
+			System.out.println("Login Successful");
+		}
+		else{
+			System.out.println("Login Failed");
+		}
+	}
+}

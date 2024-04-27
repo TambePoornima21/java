@@ -1,0 +1,24 @@
+class EvilNumber 
+{
+	public static void main(String[] args) 
+	{
+		int num=15;
+		int ct=0;
+		while (num!=0)
+		{
+			if (num%2==1)
+			{
+				ct++;
+			}
+			num/=2;
+		}
+		if (ct>=3)
+		{
+			System.out.println("Evil no")
+		}
+		else
+		{
+			System.out.println("Not a Evil no")
+		}
+	}
+}

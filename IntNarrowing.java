@@ -1,0 +1,15 @@
+class IntNarrowing 
+{
+	public static void main(String[] args) 
+	{
+		char ch=(char)5678;
+		System.out.println(ch);
+
+		short s=(short)45892;
+		System.out.println(s);
+
+		byte b=(byte)3456;
+		System.out.println(b);
+
+	}
+}

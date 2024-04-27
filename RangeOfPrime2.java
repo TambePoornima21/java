@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class RangeOfPrime2 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter start range : ");
+		int start=sc.nextInt();
+		System.out.println("Enter end range : ");
+		int end=sc.nextInt();
+		
+
+		for (;start<=end ;start++ )
+		{
+			int den;
+			for ( den=2;den<start ;den++)
+			{
+				if (start%den==0)
+				{
+					break;
+				}
+			}
+			if (den==start)
+			{
+				System.out.println(start);
+			}
+		}
+	}
+}

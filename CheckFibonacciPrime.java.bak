@@ -1,0 +1,49 @@
+import java.util.Scanner;
+class CheckFibonacciPrime
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number : ");
+		int num=sc.nextInt();
+
+		int n1=0;
+		int n2=1;
+		int n3;
+		int n=num;
+		int d=2;
+
+		while (n3<num)
+		{
+			n3=n1+n2;
+			n1=n2;
+			n2=n3;
+
+			if (n3==num)
+			{
+				System.out.println("This is a fibonacci number");
+			}
+			else
+			{
+				System.out.println("This is not a fibonacci number");
+			}
+
+		}
+		while (d<n)
+		{
+			if (n%d==0)
+			{
+				break;
+			}
+			d++;
+		}
+		if (n==d)
+		{
+			System.out.println("This fibonacci number is a prime number");
+		}
+		else
+		{
+			System.out.println("This number is not a prime number");
+		}
+	}
+}
